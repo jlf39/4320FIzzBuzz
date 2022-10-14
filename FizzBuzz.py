@@ -5,8 +5,9 @@ def Count():
         x=x+1
 
 def printforb(x):
-    if x%3 == 0: print("Fizz")
-    if x%5 == 0: print("Buzz")
-    if x%3 !=0 and x%5 !=0: print(x)
+    if x%3 == 0 and x%5 == 0: print("FizzBuzz")
+    elif x%3 == 0: print("Fizz")
+    elif x%5 == 0: print("Buzz")
+    else: print(x)
 
 Count()
